@@ -1,4 +1,4 @@
-//
+///Users/sergio.braet/Desktop/LaFonderie/LaFonderie/ViewController.swift
 //  ViewController.swift
 //  LaFonderie
 //
@@ -10,8 +10,9 @@ import UIKit
 import Firebase
 
 class ViewController: UIViewController {
-
+    var text:String?
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         var ref = FIRDatabase.database().reference()
         // Do any additional setup after loading the view, typically from a nib.
