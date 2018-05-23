@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class ViewController: UIViewController {
-    var text:String?
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
