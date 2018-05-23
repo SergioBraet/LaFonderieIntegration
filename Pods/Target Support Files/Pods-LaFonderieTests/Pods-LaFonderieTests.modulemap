@@ -1,0 +1,6 @@
+framework module Pods_LaFonderieTests {
+  umbrella header "Pods-LaFonderieTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
