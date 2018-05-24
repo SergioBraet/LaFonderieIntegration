@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LaFonderie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0Vk-qh-F7U">
+                                <rect key="frame" x="115" y="261" width="146" height="145"/>
+                                <subviews>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8 - wiel bijgesneden" translatesAutoresizingMaskIntoConstraints="NO" id="CDe-th-Fp9">
+                                        <rect key="frame" x="0.0" y="0.0" width="146" height="145"/>
+                                        <gestureRecognizers/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="ghJ-Kh-3XT" appends="YES" id="wFd-HE-7oP"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Vk-qh-F7U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6CE-aK-OzW"/>
+                            <constraint firstItem="0Vk-qh-F7U" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PIO-PF-GUY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Img" destination="CDe-th-Fp9" id="hiF-Ai-MMU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <rotationGestureRecognizer id="ghJ-Kh-3XT">
+                    <connections>
+                        <action selector="draaiTest:" destination="BYZ-38-t0r" id="UEI-ib-QYq"/>
+                    </connections>
+                </rotationGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+        </scene>
+        <!--Machines-->
+        <scene sceneID="hOr-U3-3hW">
+            <objects>
+                <viewController title="Machines" id="Sj1-5j-ce4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Kt-uK-O7N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Na-Jm-bs0">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOx-ym-gtS">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mOx-ym-gtS" firstAttribute="width" secondItem="3Na-Jm-bs0" secondAttribute="width" id="3uU-Zk-5JN"/>
+                                    <constraint firstItem="mOx-ym-gtS" firstAttribute="height" secondItem="3Na-Jm-bs0" secondAttribute="height" priority="250" id="Cug-J9-jUH"/>
+                                    <constraint firstItem="mOx-ym-gtS" firstAttribute="centerX" secondItem="3Na-Jm-bs0" secondAttribute="centerX" id="DQE-7f-rRv"/>
+                                    <constraint firstAttribute="trailing" secondItem="mOx-ym-gtS" secondAttribute="trailing" id="K6Z-x9-9Gv"/>
+                                    <constraint firstItem="mOx-ym-gtS" firstAttribute="centerY" secondItem="3Na-Jm-bs0" secondAttribute="centerY" id="Usi-Im-57P"/>
+                                    <constraint firstItem="mOx-ym-gtS" firstAttribute="leading" secondItem="3Na-Jm-bs0" secondAttribute="leading" id="e7j-XC-L2o"/>
+                                    <constraint firstItem="mOx-ym-gtS" firstAttribute="top" secondItem="3Na-Jm-bs0" secondAttribute="top" id="ghu-iL-ccU"/>
+                                    <constraint firstAttribute="bottom" secondItem="mOx-ym-gtS" secondAttribute="bottom" id="pKe-iX-kcb"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Na-Jm-bs0" firstAttribute="leading" secondItem="aPe-2G-pTW" secondAttribute="leading" id="I3t-Fz-Ifv"/>
+                            <constraint firstItem="aPe-2G-pTW" firstAttribute="bottom" secondItem="3Na-Jm-bs0" secondAttribute="bottom" id="UQ9-W4-jeH"/>
+                            <constraint firstItem="aPe-2G-pTW" firstAttribute="trailing" secondItem="3Na-Jm-bs0" secondAttribute="trailing" id="Ypj-j0-kNJ"/>
+                            <constraint firstItem="3Na-Jm-bs0" firstAttribute="top" secondItem="aPe-2G-pTW" secondAttribute="top" id="szf-eX-U1q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aPe-2G-pTW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HgP-Of-4Xh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1732" y="57"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="8 - wiel bijgesneden" width="146" height="145"/>
+    </resources>
+</document>
