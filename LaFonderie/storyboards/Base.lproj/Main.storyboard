@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hbx-qk-PXa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="CaviarDreams_Bold.ttf">
+            <string>CaviarDreams-Bold</string>
+        </array>
+        <array key="KohinoorBangla.ttc">
+            <string>KohinoorBangla-Regular</string>
+            <string>KohinoorBangla-Semibold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -54,50 +65,361 @@
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
         </scene>
-        <!--Machines-->
-        <scene sceneID="hOr-U3-3hW">
+        <!-- Home-->
+        <scene sceneID="dPI-eF-57r">
             <objects>
-                <viewController title="Machines" id="Sj1-5j-ce4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1Kt-uK-O7N">
+                <viewController title=" Home" id="eNN-X2-exF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1dQ-is-UE9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Na-Jm-bs0">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOx-ym-gtS">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="mOx-ym-gtS" firstAttribute="width" secondItem="3Na-Jm-bs0" secondAttribute="width" id="3uU-Zk-5JN"/>
-                                    <constraint firstItem="mOx-ym-gtS" firstAttribute="height" secondItem="3Na-Jm-bs0" secondAttribute="height" priority="250" id="Cug-J9-jUH"/>
-                                    <constraint firstItem="mOx-ym-gtS" firstAttribute="centerX" secondItem="3Na-Jm-bs0" secondAttribute="centerX" id="DQE-7f-rRv"/>
-                                    <constraint firstAttribute="trailing" secondItem="mOx-ym-gtS" secondAttribute="trailing" id="K6Z-x9-9Gv"/>
-                                    <constraint firstItem="mOx-ym-gtS" firstAttribute="centerY" secondItem="3Na-Jm-bs0" secondAttribute="centerY" id="Usi-Im-57P"/>
-                                    <constraint firstItem="mOx-ym-gtS" firstAttribute="leading" secondItem="3Na-Jm-bs0" secondAttribute="leading" id="e7j-XC-L2o"/>
-                                    <constraint firstItem="mOx-ym-gtS" firstAttribute="top" secondItem="3Na-Jm-bs0" secondAttribute="top" id="ghu-iL-ccU"/>
-                                    <constraint firstAttribute="bottom" secondItem="mOx-ym-gtS" secondAttribute="bottom" id="pKe-iX-kcb"/>
-                                </constraints>
-                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6s-bh-uyG">
+                                <rect key="frame" x="166.5" y="319" width="41" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="cqi-cn-8yU" kind="show" animates="NO" id="dWh-D9-1ah"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3Na-Jm-bs0" firstAttribute="leading" secondItem="aPe-2G-pTW" secondAttribute="leading" id="I3t-Fz-Ifv"/>
-                            <constraint firstItem="aPe-2G-pTW" firstAttribute="bottom" secondItem="3Na-Jm-bs0" secondAttribute="bottom" id="UQ9-W4-jeH"/>
-                            <constraint firstItem="aPe-2G-pTW" firstAttribute="trailing" secondItem="3Na-Jm-bs0" secondAttribute="trailing" id="Ypj-j0-kNJ"/>
-                            <constraint firstItem="3Na-Jm-bs0" firstAttribute="top" secondItem="aPe-2G-pTW" secondAttribute="top" id="szf-eX-U1q"/>
+                            <constraint firstItem="s6s-bh-uyG" firstAttribute="centerX" secondItem="1dQ-is-UE9" secondAttribute="centerX" id="4eZ-g4-JSH"/>
+                            <constraint firstItem="s6s-bh-uyG" firstAttribute="centerY" secondItem="1dQ-is-UE9" secondAttribute="centerY" id="Xdv-ro-xp0"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="aPe-2G-pTW"/>
+                        <viewLayoutGuide key="safeArea" id="5jt-FT-usW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wXc-sm-plT">
+                        <barButtonItem key="backBarButtonItem" title=" " id="cTo-vf-pMu"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LpW-KU-G3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1882" y="59"/>
+        </scene>
+        <!--Machines View Controller-->
+        <scene sceneID="tWl-Xz-qqD">
+            <objects>
+                <viewController id="cqi-cn-8yU" customClass="MachinesViewController" customModule="LaFonderie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f1V-k1-02s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E0U-1V-b6y">
+                                <rect key="frame" x="0.0" y="64" width="375" height="936"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qWN-Se-43G">
+                                        <rect key="frame" x="0.0" y="0.0" width="376" height="1000"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1NZ-q6-2Hj">
+                                                <rect key="frame" x="0.0" y="0.0" width="376" height="1000"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cV-UQ-U50">
+                                                        <rect key="frame" x="164" y="8" width="46" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z74-AO-LIs">
+                                                        <rect key="frame" x="164" y="931" width="46" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MACHINES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJM-aT-YoY">
+                                                        <rect key="frame" x="8" y="38" width="359" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="21" id="1OX-nP-lNy"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="25"/>
+                                                        <color key="textColor" red="0.29079228639602661" green="0.39198628067970276" blue="0.42153823375701904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lijnTitel" translatesAutoresizingMaskIntoConstraints="NO" id="q1w-5a-xAC">
+                                                        <rect key="frame" x="32" y="67" width="311" height="38"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="38" id="hxY-0r-T58"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Per afdeling zijn er 2 machines aanwezig. Zou jij deze machines graag tot leven brengen? Ga dan verder!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DT7-y5-NPi">
+                                                        <rect key="frame" x="32" y="113" width="311" height="85"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="85" id="nm6-NN-fGg"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="16"/>
+                                                        <color key="textColor" red="0.29079228639602661" green="0.39198628067970276" blue="0.42153823375701904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="machine" translatesAutoresizingMaskIntoConstraints="NO" id="pUh-Sn-xtc">
+                                                        <rect key="frame" x="32" y="206" width="311" height="220"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="220" id="1Lq-na-0lG"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kz1-D5-3Kb">
+                                                        <rect key="frame" x="44" y="408" width="289" height="185"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DE CACAOMACHINE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Soh-b1-sDU">
+                                                                <rect key="frame" x="8" y="30" width="273" height="26"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="26" id="ps7-NG-Za0"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="20"/>
+                                                                <color key="textColor" red="0.29079228639602661" green="0.39198628067970276" blue="0.42153823375701904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVk-fP-OBn">
+                                                                <rect key="frame" x="8" y="64" width="273" height="95"/>
+                                                                <string key="text">De cacaomachine is een heel erg populaire machine. Vroeger was dit de snelste manier om heel lekkere chocolade te maken. Hierdoor kon er chocola in massaproductie gemaakt worden zonder problemen.</string>
+                                                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="13"/>
+                                                                <color key="textColor" red="0.58015269041061401" green="0.58852046728134155" blue="0.57600247859954834" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.96874374151229858" green="0.96545952558517456" blue="0.92366820573806763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Soh-b1-sDU" firstAttribute="trailing" secondItem="cVk-fP-OBn" secondAttribute="trailing" id="DeY-UB-3Tb"/>
+                                                            <constraint firstItem="cVk-fP-OBn" firstAttribute="top" secondItem="Soh-b1-sDU" secondAttribute="bottom" constant="8" id="KnR-9G-ffZ"/>
+                                                            <constraint firstItem="cVk-fP-OBn" firstAttribute="bottom" secondItem="Kz1-D5-3Kb" secondAttribute="bottomMargin" constant="-18" id="NS3-DT-wvP"/>
+                                                            <constraint firstItem="Soh-b1-sDU" firstAttribute="trailing" secondItem="Kz1-D5-3Kb" secondAttribute="trailingMargin" id="a6K-M9-UN5"/>
+                                                            <constraint firstItem="Soh-b1-sDU" firstAttribute="leading" secondItem="cVk-fP-OBn" secondAttribute="leading" id="bYe-hL-Xgr"/>
+                                                            <constraint firstItem="Soh-b1-sDU" firstAttribute="top" secondItem="Kz1-D5-3Kb" secondAttribute="top" constant="30" id="gTn-gC-GaO"/>
+                                                            <constraint firstItem="Soh-b1-sDU" firstAttribute="leading" secondItem="Kz1-D5-3Kb" secondAttribute="leadingMargin" id="xn7-eC-Rc8"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZB-nI-M7u">
+                                                        <rect key="frame" x="153" y="575" width="71" height="28"/>
+                                                        <color key="backgroundColor" red="0.38942056894302368" green="0.4784737229347229" blue="0.49555414915084839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="14"/>
+                                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                                        <state key="normal" title="Ontdek"/>
+                                                        <connections>
+                                                            <segue destination="4uf-o4-qb6" kind="show" id="nNN-Jk-ztv"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.96874374151229858" green="0.96545952558517456" blue="0.92366820573806763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.96056586503982544" green="0.96928983926773071" blue="0.93591731786727905" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="DT7-y5-NPi" firstAttribute="top" secondItem="q1w-5a-xAC" secondAttribute="bottom" constant="8" symbolic="YES" id="2fw-bI-gWu"/>
+                                                    <constraint firstItem="GJM-aT-YoY" firstAttribute="centerX" secondItem="1NZ-q6-2Hj" secondAttribute="centerX" id="6Ke-7u-ve6"/>
+                                                    <constraint firstItem="DT7-y5-NPi" firstAttribute="leading" secondItem="pUh-Sn-xtc" secondAttribute="leading" id="6aG-Bq-FVn"/>
+                                                    <constraint firstItem="q1w-5a-xAC" firstAttribute="trailing" secondItem="DT7-y5-NPi" secondAttribute="trailing" id="CKA-0S-zjj"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Z74-AO-LIs" secondAttribute="bottom" constant="39" id="CbY-xk-vZL"/>
+                                                    <constraint firstItem="1cV-UQ-U50" firstAttribute="top" secondItem="1NZ-q6-2Hj" secondAttribute="topMargin" id="FSX-oS-dz2"/>
+                                                    <constraint firstItem="pUh-Sn-xtc" firstAttribute="top" secondItem="DT7-y5-NPi" secondAttribute="bottom" constant="8" symbolic="YES" id="GfB-yF-xyr"/>
+                                                    <constraint firstItem="Kz1-D5-3Kb" firstAttribute="centerX" secondItem="1NZ-q6-2Hj" secondAttribute="centerX" id="Ibw-FE-8Ui"/>
+                                                    <constraint firstItem="Kz1-D5-3Kb" firstAttribute="centerY" secondItem="1NZ-q6-2Hj" secondAttribute="centerY" id="Kfu-bE-Gj7"/>
+                                                    <constraint firstItem="q1w-5a-xAC" firstAttribute="leading" secondItem="1NZ-q6-2Hj" secondAttribute="leading" constant="32" id="LNX-aN-FrM"/>
+                                                    <constraint firstItem="q1w-5a-xAC" firstAttribute="top" secondItem="GJM-aT-YoY" secondAttribute="bottom" constant="8" symbolic="YES" id="W0K-Hm-h93"/>
+                                                    <constraint firstItem="GJM-aT-YoY" firstAttribute="leading" secondItem="1NZ-q6-2Hj" secondAttribute="leadingMargin" id="XHh-UG-J5z"/>
+                                                    <constraint firstItem="DT7-y5-NPi" firstAttribute="trailing" secondItem="pUh-Sn-xtc" secondAttribute="trailing" id="bsP-1S-nwW"/>
+                                                    <constraint firstItem="JZB-nI-M7u" firstAttribute="centerX" secondItem="Kz1-D5-3Kb" secondAttribute="centerX" id="cPF-g3-UWi"/>
+                                                    <constraint firstItem="Kz1-D5-3Kb" firstAttribute="leading" secondItem="1NZ-q6-2Hj" secondAttribute="leading" constant="44" id="hie-Io-MaY"/>
+                                                    <constraint firstItem="1cV-UQ-U50" firstAttribute="centerX" secondItem="GJM-aT-YoY" secondAttribute="centerX" id="jtc-MO-k4B"/>
+                                                    <constraint firstItem="1cV-UQ-U50" firstAttribute="leading" secondItem="Z74-AO-LIs" secondAttribute="leading" id="mGi-qS-B0g"/>
+                                                    <constraint firstAttribute="bottom" secondItem="JZB-nI-M7u" secondAttribute="bottom" constant="397" id="nHL-Gn-C85"/>
+                                                    <constraint firstItem="q1w-5a-xAC" firstAttribute="leading" secondItem="DT7-y5-NPi" secondAttribute="leading" id="pUr-wQ-atv"/>
+                                                    <constraint firstItem="Kz1-D5-3Kb" firstAttribute="top" secondItem="1NZ-q6-2Hj" secondAttribute="top" constant="408" id="pyA-w3-6WB"/>
+                                                    <constraint firstItem="GJM-aT-YoY" firstAttribute="top" secondItem="1cV-UQ-U50" secondAttribute="bottom" id="t1f-Ne-DtZ"/>
+                                                    <constraint firstItem="GJM-aT-YoY" firstAttribute="centerX" secondItem="q1w-5a-xAC" secondAttribute="centerX" id="zn7-bX-5na"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="QKT-fn-nmO"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qWN-Se-43G" firstAttribute="top" secondItem="E0U-1V-b6y" secondAttribute="top" id="FCk-o6-RSE"/>
+                                    <constraint firstAttribute="trailing" secondItem="qWN-Se-43G" secondAttribute="trailing" constant="-1" id="I3v-Me-IDN"/>
+                                    <constraint firstAttribute="bottom" secondItem="qWN-Se-43G" secondAttribute="bottom" constant="-64" id="QKd-AF-Cbz"/>
+                                    <constraint firstItem="qWN-Se-43G" firstAttribute="centerX" secondItem="E0U-1V-b6y" secondAttribute="centerX" id="dYG-5Y-Jm0"/>
+                                    <constraint firstItem="qWN-Se-43G" firstAttribute="leading" secondItem="E0U-1V-b6y" secondAttribute="leading" id="l3i-H6-5Rh"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="E0U-1V-b6y" firstAttribute="leading" secondItem="f1V-k1-02s" secondAttribute="leading" id="9a1-9V-NnF"/>
+                            <constraint firstAttribute="trailing" secondItem="E0U-1V-b6y" secondAttribute="trailing" id="DRn-GN-eT7"/>
+                            <constraint firstItem="E0U-1V-b6y" firstAttribute="bottom" secondItem="Iiu-7v-Rxk" secondAttribute="bottom" id="NGy-L2-odX"/>
+                            <constraint firstItem="E0U-1V-b6y" firstAttribute="top" secondItem="Iiu-7v-Rxk" secondAttribute="top" id="V2L-32-2N8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Iiu-7v-Rxk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aMF-LS-1iI">
+                        <barButtonItem key="backBarButtonItem" title="  " id="paj-Qy-6aO"/>
+                        <rightBarButtonItems>
+                            <barButtonItem image="info-klein" id="E6B-Xe-0Xc">
+                                <inset key="imageInsets" minX="1" minY="1" maxX="0.0" maxY="-5"/>
+                                <inset key="largeContentSizeImageInsets" minX="0.0" minY="2" maxX="1" maxY="0.0"/>
+                                <color key="tintColor" red="0.29081103205680847" green="0.39206510782241821" blue="0.41747862100601196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="inb-Ra-9FW" kind="show" id="Vdx-CF-D4F"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="trophy klein" id="4dV-Ok-RMh">
+                                <inset key="imageInsets" minX="1" minY="1" maxX="0.0" maxY="-5"/>
+                                <inset key="largeContentSizeImageInsets" minX="1" minY="2" maxX="1" maxY="0.0"/>
+                                <color key="tintColor" red="0.29081103205680847" green="0.39206510782241821" blue="0.41747862100601196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="aBw-pd-kLu" kind="show" id="Wsw-Yw-gYk"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="beschrijvingView" destination="Kz1-D5-3Kb" id="0iP-fR-iE7"/>
+                        <outlet property="btnOntdekEersteMachine" destination="JZB-nI-M7u" id="bky-bP-3hY"/>
+                        <outlet property="imgMachine" destination="pUh-Sn-xtc" id="rX5-VN-Mi7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vKj-zM-cap" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2616.8000000000002" y="118.74062968515743"/>
+        </scene>
+        <!--achievements-->
+        <scene sceneID="lui-qr-dIQ">
+            <objects>
+                <viewController title="achievements" id="aBw-pd-kLu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wrK-Mu-5je">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="MkC-c1-x0f"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HgP-Of-4Xh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NKw-TC-VHv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1732" y="57"/>
+            <point key="canvasLocation" x="3697" y="-171"/>
+        </scene>
+        <!--info-->
+        <scene sceneID="0wr-HA-mHd">
+            <objects>
+                <viewController title="info" id="inb-Ra-9FW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tok-6b-s9H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="SO6-8f-PQQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nJ3-u0-eKz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3697" y="601"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ojo-Xg-fqJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hbx-qk-PXa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bi6-oP-Twa">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eNN-X2-exF" kind="relationship" relationship="rootViewController" id="IUt-9i-Vvl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uHQ-R1-Ntg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="918.39999999999998" y="59.370314842578715"/>
+        </scene>
+        <!--Detail Machine View Controller-->
+        <scene sceneID="vcc-zT-aIi">
+            <objects>
+                <viewController id="4uf-o4-qb6" customClass="detailMachineViewController" customModule="LaFonderie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G66-gL-ugi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MACHINE 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hd5-eK-tpw">
+                                <rect key="frame" x="141" y="79" width="93" height="22"/>
+                                <fontDescription key="fontDescription" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="17"/>
+                                <color key="textColor" red="0.29501575229999999" green="0.3965827227" blue="0.42321202159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kopie van IMG_20180515_100428" translatesAutoresizingMaskIntoConstraints="NO" id="C5H-cc-gIQ">
+                                <rect key="frame" x="0.0" y="186" width="375" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="uQO-xk-YBj"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lijnTitel" translatesAutoresizingMaskIntoConstraints="NO" id="Z6w-bR-5hV">
+                                <rect key="frame" x="30" y="119" width="315" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="d0k-JG-I7X"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iMe-LI-PrE">
+                                <rect key="frame" x="43" y="462" width="289" height="151"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyJ-6Q-C6B">
+                                        <rect key="frame" x="8" y="59" width="273" height="74"/>
+                                        <string key="text">Om deze machine tot leven te brengen moet je proberen tikken op een onderdeel tikken. Deze zal vervolgens bewegen en tot leven komen!</string>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="13"/>
+                                        <color key="textColor" red="0.58015269039999995" green="0.58852046729999996" blue="0.57600247859999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96874374149999998" green="0.96545952560000003" blue="0.92366820569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="TyJ-6Q-C6B" firstAttribute="leading" secondItem="iMe-LI-PrE" secondAttribute="leadingMargin" id="1Uh-eb-T7Z"/>
+                                    <constraint firstAttribute="bottom" secondItem="TyJ-6Q-C6B" secondAttribute="bottom" constant="18" id="Qge-el-Kua"/>
+                                    <constraint firstItem="TyJ-6Q-C6B" firstAttribute="trailing" secondItem="iMe-LI-PrE" secondAttribute="trailingMargin" id="hDu-vo-SL0"/>
+                                    <constraint firstItem="TyJ-6Q-C6B" firstAttribute="top" secondItem="iMe-LI-PrE" secondAttribute="top" constant="59" id="m2F-gk-0hf"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DE CACAOMACHINE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUo-qf-22c">
+                                <rect key="frame" x="43" y="486" width="289" height="21"/>
+                                <fontDescription key="fontDescription" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="20"/>
+                                <color key="textColor" red="0.39347922801971436" green="0.47846132516860962" blue="0.49551939964294434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97000676389999996" green="0.96568495040000002" blue="0.92304247620000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="C5H-cc-gIQ" firstAttribute="trailing" secondItem="hZF-Df-k0Z" secondAttribute="trailing" id="6vl-Og-Vla"/>
+                            <constraint firstItem="Z6w-bR-5hV" firstAttribute="leading" secondItem="hZF-Df-k0Z" secondAttribute="leading" constant="30" id="8cO-pE-sz5"/>
+                            <constraint firstItem="hd5-eK-tpw" firstAttribute="top" secondItem="hZF-Df-k0Z" secondAttribute="top" constant="15" id="8lL-R4-WjQ"/>
+                            <constraint firstItem="JUo-qf-22c" firstAttribute="centerX" secondItem="iMe-LI-PrE" secondAttribute="centerX" id="986-6Z-GhT"/>
+                            <constraint firstItem="iMe-LI-PrE" firstAttribute="top" secondItem="G66-gL-ugi" secondAttribute="top" constant="462" id="Ij1-7d-y3x"/>
+                            <constraint firstItem="JUo-qf-22c" firstAttribute="top" secondItem="C5H-cc-gIQ" secondAttribute="bottom" constant="20" id="KoP-ph-L9O"/>
+                            <constraint firstItem="Z6w-bR-5hV" firstAttribute="top" secondItem="hd5-eK-tpw" secondAttribute="bottom" constant="18" id="OAH-ni-xhZ"/>
+                            <constraint firstItem="iMe-LI-PrE" firstAttribute="centerX" secondItem="C5H-cc-gIQ" secondAttribute="centerX" id="TqH-C3-mx4"/>
+                            <constraint firstItem="hZF-Df-k0Z" firstAttribute="bottom" secondItem="iMe-LI-PrE" secondAttribute="bottom" constant="54" id="WIS-tl-G7d"/>
+                            <constraint firstItem="iMe-LI-PrE" firstAttribute="leading" secondItem="hZF-Df-k0Z" secondAttribute="leading" constant="43" id="aNy-IX-dWO"/>
+                            <constraint firstItem="Z6w-bR-5hV" firstAttribute="centerX" secondItem="C5H-cc-gIQ" secondAttribute="centerX" id="hMp-YJ-qTM"/>
+                            <constraint firstItem="C5H-cc-gIQ" firstAttribute="leading" secondItem="hZF-Df-k0Z" secondAttribute="leading" id="iVv-ih-q3N"/>
+                            <constraint firstItem="C5H-cc-gIQ" firstAttribute="top" secondItem="Z6w-bR-5hV" secondAttribute="bottom" constant="32" id="tDe-a5-69D"/>
+                            <constraint firstItem="hd5-eK-tpw" firstAttribute="centerX" secondItem="Z6w-bR-5hV" secondAttribute="centerX" id="xhy-3e-bAP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hZF-Df-k0Z"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dif-PC-Xp5">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="xHK-Gx-O6X"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imgMachine" destination="C5H-cc-gIQ" id="mye-ZT-ByY"/>
+                        <outlet property="randTekst" destination="iMe-LI-PrE" id="XrJ-2Z-ESg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OWX-k7-kD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1880.8" y="756.97151424287858"/>
         </scene>
     </scenes>
     <resources>
         <image name="8 - wiel bijgesneden" width="146" height="145"/>
+        <image name="Kopie van IMG_20180515_100428" width="4608" height="3456"/>
+        <image name="info-klein" width="28" height="41"/>
+        <image name="lijnTitel" width="606" height="65"/>
+        <image name="machine" width="4608" height="3456"/>
+        <image name="trophy klein" width="27" height="41"/>
     </resources>
 </document>
