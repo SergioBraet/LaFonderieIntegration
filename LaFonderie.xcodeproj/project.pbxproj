@@ -16,6 +16,7 @@
 		0E736BE420B4559700C9CC2A /* LaFonderieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E736BE320B4559700C9CC2A /* LaFonderieUITests.swift */; };
 		0E736BF220B4563400C9CC2A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E736BF120B4563400C9CC2A /* GoogleService-Info.plist */; };
 		0E736BF320B45D9000C9CC2A /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E736BF420B45D9000C9CC2A /* FirebaseCore.framework */; };
+		0E7EF05520B81258009D5689 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7EF05420B81258009D5689 /* MainViewController.swift */; };
 		0E8660C020B69F7900A053A8 /* XMCircleGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8660BF20B69F7800A053A8 /* XMCircleGestureRecognizer.swift */; };
 		0E8660C220B6AFFE00A053A8 /* MachinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8660C120B6AFFE00A053A8 /* MachinesViewController.swift */; };
 		0E8660C520B6B99800A053A8 /* CaviarDreams_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E8660C420B6B99800A053A8 /* CaviarDreams_Bold.ttf */; };
@@ -91,6 +92,7 @@
 		0E736BE520B4559700C9CC2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E736BF120B4563400C9CC2A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0E736BF420B45D9000C9CC2A /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E7EF05420B81258009D5689 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0E8660BF20B69F7800A053A8 /* XMCircleGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMCircleGestureRecognizer.swift; sourceTree = "<group>"; };
 		0E8660C120B6AFFE00A053A8 /* MachinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MachinesViewController.swift; path = LaFonderie/viewcontrollers/MachinesViewController.swift; sourceTree = SOURCE_ROOT; };
 		0E8660C420B6B99800A053A8 /* CaviarDreams_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_Bold.ttf; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 			children = (
 				0E8660C820B6F3F600A053A8 /* detailMachineViewController.swift */,
 				0E8660C120B6AFFE00A053A8 /* MachinesViewController.swift */,
+				0E7EF05420B81258009D5689 /* MainViewController.swift */,
 				0E736BC520B4559700C9CC2A /* ViewController.swift */,
 			);
 			path = viewcontrollers;
@@ -556,6 +559,7 @@
 				0EDDCA3A20B56CC000E3860E /* animations.swift in Sources */,
 				0EDDCAAC20B593C300E3860E /* DynamicItemBasic.swift in Sources */,
 				0EDDCA9E20B593C300E3860E /* AnimationSequence.swift in Sources */,
+				0E7EF05520B81258009D5689 /* MainViewController.swift in Sources */,
 				0EDDCAA920B593C300E3860E /* DriveAnimateBehaviors.swift in Sources */,
 				0E8660C220B6AFFE00A053A8 /* MachinesViewController.swift in Sources */,
 				0EDDCAAA20B593C300E3860E /* DynamicItem+Behavior.swift in Sources */,
