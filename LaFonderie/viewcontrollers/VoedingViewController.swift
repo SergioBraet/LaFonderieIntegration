@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  VoedingViewController.swift
 //  LaFonderie
 //
 //  Created by BRAET Sergio (s) on 25/05/2018.
@@ -8,33 +8,27 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class VoedingViewController: UIViewController {
 
 
-    @IBOutlet weak var txtHout: UILabel!
-    @IBOutlet weak var btnHout: UIButton!
-    @IBOutlet weak var beschrijvingHoutView: UIView!
-    @IBOutlet weak var imgHoutIcon: UIImageView!
-    //@IBOutlet weak var txtHout: UILabel!
-    //@IBOutlet weak var imgHoutIcon: UIImageView!
+
+    @IBOutlet weak var btnVoeding: UIButton!
+    @IBOutlet weak var txtVoeding: UILabel!
+    @IBOutlet weak var VoedingBeschrijvingView: UIView!
     
-    //@IBOutlet weak var btnHout: UIButton!
-    //@IBOutlet weak var BeschrijvingHoutView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         let navigationBarAppearance = UINavigationBar.appearance()
         navigationBarAppearance.barTintColor = UIColor(red:0.96, green:0.96, blue:0.91, alpha:1.0)
         navigationBarAppearance.isTranslucent = false
         
-       btnHout.superview?.bringSubview(toFront: btnHout)
-        txtHout.superview?.bringSubview(toFront: txtHout)
-        imgHoutIcon.superview?.bringSubview(toFront: imgHoutIcon)
+        btnVoeding.superview?.bringSubview(toFront: btnVoeding)
+        txtVoeding.superview?.bringSubview(toFront: txtVoeding)
 
-        
-        beschrijvingHoutView.layer.borderColor =  UIColor(red:0.66, green:0.25, blue:0.28, alpha:1.0).cgColor
-        beschrijvingHoutView.layer.borderWidth = 1
-        beschrijvingHoutView.layer.cornerRadius = 10
-        // Do any additional setup after loading the view
+        VoedingBeschrijvingView.layer.borderColor =  UIColor(red:0.67, green:0.75, blue:0.59, alpha:1.0).cgColor
+        VoedingBeschrijvingView.layer.borderWidth = 1
+        VoedingBeschrijvingView.layer.cornerRadius = 10
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

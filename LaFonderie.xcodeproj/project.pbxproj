@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E493A9920BBEB020095F33C /* MetaalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E493A9820BBEB020095F33C /* MetaalViewController.swift */; };
+		0E493A9B20BC22A80095F33C /* MachinesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E493A9A20BC22A80095F33C /* MachinesTableViewController.swift */; };
 		0E736BC420B4559700C9CC2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E736BC320B4559700C9CC2A /* AppDelegate.swift */; };
 		0E736BC620B4559700C9CC2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E736BC520B4559700C9CC2A /* ViewController.swift */; };
 		0E736BC920B4559700C9CC2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E736BC720B4559700C9CC2A /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 		0E736BF220B4563400C9CC2A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E736BF120B4563400C9CC2A /* GoogleService-Info.plist */; };
 		0E736BF320B45D9000C9CC2A /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E736BF420B45D9000C9CC2A /* FirebaseCore.framework */; };
 		0E7EF05520B81258009D5689 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7EF05420B81258009D5689 /* MainViewController.swift */; };
+		0E7EF05D20B833A1009D5689 /* TextielViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7EF05C20B833A1009D5689 /* TextielViewController.swift */; };
+		0E7EF05F20B84D34009D5689 /* VoedingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7EF05E20B84D34009D5689 /* VoedingViewController.swift */; };
 		0E8660C020B69F7900A053A8 /* XMCircleGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8660BF20B69F7800A053A8 /* XMCircleGestureRecognizer.swift */; };
 		0E8660C220B6AFFE00A053A8 /* MachinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8660C120B6AFFE00A053A8 /* MachinesViewController.swift */; };
 		0E8660C520B6B99800A053A8 /* CaviarDreams_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E8660C420B6B99800A053A8 /* CaviarDreams_Bold.ttf */; };
@@ -77,6 +81,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E493A9820BBEB020095F33C /* MetaalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaalViewController.swift; sourceTree = "<group>"; };
+		0E493A9A20BC22A80095F33C /* MachinesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachinesTableViewController.swift; sourceTree = "<group>"; };
 		0E736BC020B4559700C9CC2A /* LaFonderie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaFonderie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E736BC320B4559700C9CC2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E736BC520B4559700C9CC2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +99,8 @@
 		0E736BF120B4563400C9CC2A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0E736BF420B45D9000C9CC2A /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7EF05420B81258009D5689 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0E7EF05C20B833A1009D5689 /* TextielViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextielViewController.swift; sourceTree = "<group>"; };
+		0E7EF05E20B84D34009D5689 /* VoedingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoedingViewController.swift; sourceTree = "<group>"; };
 		0E8660BF20B69F7800A053A8 /* XMCircleGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMCircleGestureRecognizer.swift; sourceTree = "<group>"; };
 		0E8660C120B6AFFE00A053A8 /* MachinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MachinesViewController.swift; path = LaFonderie/viewcontrollers/MachinesViewController.swift; sourceTree = SOURCE_ROOT; };
 		0E8660C420B6B99800A053A8 /* CaviarDreams_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_Bold.ttf; sourceTree = "<group>"; };
@@ -255,10 +263,14 @@
 		0EDDCA3720B56C8F00E3860E /* viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				0E493A9A20BC22A80095F33C /* MachinesTableViewController.swift */,
+				0E493A9820BBEB020095F33C /* MetaalViewController.swift */,
+				0E7EF05E20B84D34009D5689 /* VoedingViewController.swift */,
 				0E8660C820B6F3F600A053A8 /* detailMachineViewController.swift */,
 				0E8660C120B6AFFE00A053A8 /* MachinesViewController.swift */,
 				0E7EF05420B81258009D5689 /* MainViewController.swift */,
 				0E736BC520B4559700C9CC2A /* ViewController.swift */,
+				0E7EF05C20B833A1009D5689 /* TextielViewController.swift */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
@@ -554,7 +566,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E493A9920BBEB020095F33C /* MetaalViewController.swift in Sources */,
 				0EDDCAB820B593C300E3860E /* UIView+Stellar.swift in Sources */,
+				0E7EF05F20B84D34009D5689 /* VoedingViewController.swift in Sources */,
 				0EDDCABB20B593C300E3860E /* Vectorial.swift in Sources */,
 				0EDDCA3A20B56CC000E3860E /* animations.swift in Sources */,
 				0EDDCAAC20B593C300E3860E /* DynamicItemBasic.swift in Sources */,
@@ -562,6 +576,7 @@
 				0E7EF05520B81258009D5689 /* MainViewController.swift in Sources */,
 				0EDDCAA920B593C300E3860E /* DriveAnimateBehaviors.swift in Sources */,
 				0E8660C220B6AFFE00A053A8 /* MachinesViewController.swift in Sources */,
+				0E7EF05D20B833A1009D5689 /* TextielViewController.swift in Sources */,
 				0EDDCAAA20B593C300E3860E /* DynamicItem+Behavior.swift in Sources */,
 				0EDDCAB520B593C300E3860E /* TimingType.swift in Sources */,
 				0EDDCAA420B593C300E3860E /* BasicConfigurable.swift in Sources */,
@@ -586,6 +601,7 @@
 				0E8660C020B69F7900A053A8 /* XMCircleGestureRecognizer.swift in Sources */,
 				0E736BC420B4559700C9CC2A /* AppDelegate.swift in Sources */,
 				0EDDCAAE20B593C300E3860E /* GravityConfigurable.swift in Sources */,
+				0E493A9B20BC22A80095F33C /* MachinesTableViewController.swift in Sources */,
 				0EDDCAAD20B593C300E3860E /* DynamicItemGravity.swift in Sources */,
 				0EDDCAB720B593C300E3860E /* UIView+AnimateBehavior.swift in Sources */,
 				0EDDCAAF20B593C300E3860E /* Interpolatable.swift in Sources */,
