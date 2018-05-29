@@ -9,6 +9,7 @@
 //
 
 import UIKit
+import Firebase
 
 class MachineCell:UITableViewCell  {
     @IBOutlet var afbeelding: UIImageView!
@@ -16,11 +17,18 @@ class MachineCell:UITableViewCell  {
 }
 
 class MachinesTableViewController: UITableViewController {
+    
+    var ref: DatabaseReference?
+    var databasehandle:DatabaseHandle?
+    var sector:String = ""
+    var aantalRows:Int = 0
+    
     @IBOutlet var mijnTableview: UITableView!
     @IBOutlet weak var header: UIView!
-    let aantalMachines:Int = 2
     override func viewDidLoad() {
         super.viewDidLoad()
+        haalTekstOp()
+        haalAantalMachinesOp()
         
        let navigationBarAppearance = UINavigationBar.appearance()
         navigationBarAppearance.barTintColor = UIColor(red:0.96, green:0.96, blue:0.91, alpha:1.0)
@@ -55,10 +63,31 @@ class MachinesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return aantalMachines
+
+        return aantalRows
+       
     }
 
-
+    func haalAantalMachinesOp(){
+        Auth.auth().signIn(withEmail: "lafonderie2@gmail.com", password: "Lafonderi2") { (user, error) in
+            if user != nil{
+                self.ref = Database.database().reference()
+                
+                
+                self.databasehandle = self.ref?.child("sectoren").child("TEXTIEL").child("machines").observe(.value, with: { (snapshot)  in
+                    var arraytje = snapshot.value as! [String:AnyObject]
+                    self.aantalRows = arraytje.count
+                    self.mijnTableview.reloadData()
+                    //return arraytje.count
+                    //self.txtBeschrijvingMetaal.text = snapshot.value as! String
+                })
+               
+                
+            }else{
+                print(error?.localizedDescription)
+            }
+        }
+    }
 
 
     
@@ -72,6 +101,48 @@ class MachinesTableViewController: UITableViewController {
         // Configure the cell...
 
         return cell
+    }
+    
+    func haalGegevensOp(){
+        Auth.auth().signIn(withEmail: "lafonderie2@gmail.com", password: "Lafonderi2") { (user, error) in
+            if user != nil{
+                self.ref = Database.database().reference()
+                let storage = Storage.storage().reference()
+                let tempImageRef = storage.child("home 4.png")
+                
+                tempImageRef.getData(maxSize: 1*1000*1000){
+                    (data, error) in
+                    if error == nil{
+                        var afbeelding:UIImage? = UIImage(data: data!)
+                        //self.btnMetaalView.setImage(afbeelding, for: .normal)
+                    }else{
+                        print(error?.localizedDescription)
+                    }
+                }
+            }
+        }
+        
+    }
+    
+    func haalTekstOp(){
+        var tekst:String = ""
+        Auth.auth().signIn(withEmail: "lafonderie2@gmail.com", password: "Lafonderi2") { (user, error) in
+            if user != nil{
+                self.ref = Database.database().reference()
+                
+                
+                
+                self.databasehandle = self.ref?.child("sectoren").child("TEXTIEL").child("machines").observe(.value, with: { (snapshot) in
+                    var arraytje = snapshot.value as! [String:AnyObject]
+                    print(arraytje["naaimachine"]!["beschrijving"])
+                    //self.txtBeschrijvingMetaal.text = snapshot.value as! String
+                })
+                
+            }else{
+                print(error?.localizedDescription)
+            }
+        }
+        
     }
  
 
