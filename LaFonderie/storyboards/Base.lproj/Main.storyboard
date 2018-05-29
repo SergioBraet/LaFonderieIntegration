@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QlQ-dR-Mvf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UtU-eC-Vfz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -347,6 +347,7 @@
                         <outlet property="beschrijvingHoutView" destination="TcI-db-OR6" id="ECD-PR-VPL"/>
                         <outlet property="btnHout" destination="8Ro-6D-SS9" id="t4b-TO-mo0"/>
                         <outlet property="imgHoutIcon" destination="qtg-JM-nzR" id="ytj-YL-cxt"/>
+                        <outlet property="txtBeschrijvingHout" destination="MT3-mu-jhi" id="1i3-ii-gkv"/>
                         <outlet property="txtHout" destination="O7U-Qj-6qf" id="IbB-1x-XbN"/>
                     </connections>
                 </viewController>
@@ -722,13 +723,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lineHome" translatesAutoresizingMaskIntoConstraints="NO" id="mrn-xj-32T">
-                                <rect key="frame" x="18" y="93" width="343" height="139"/>
+                                <rect key="frame" x="18" y="49" width="343" height="139"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="139" id="mru-JV-xsK"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVs-54-dTI">
-                                <rect key="frame" x="64" y="196" width="251" height="322"/>
+                                <rect key="frame" x="64" y="152" width="251" height="322"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="322" id="2wl-Lp-AiS"/>
                                 </constraints>
@@ -738,7 +739,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="METAAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Iw-6b-A2B">
-                                <rect key="frame" x="107" y="213" width="166" height="55"/>
+                                <rect key="frame" x="107" y="169" width="166" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="to8-yh-dGr"/>
                                 </constraints>
@@ -747,13 +748,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SECTOREN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEr-4M-FTm">
-                                <rect key="frame" x="0.0" y="93" width="375" height="37"/>
+                                <rect key="frame" x="0.0" y="49" width="375" height="37"/>
                                 <fontDescription key="fontDescription" name="CaviarDreams-Bold" family="Caviar Dreams" pointSize="29"/>
                                 <color key="textColor" red="0.30970248579999998" green="0.42684429880000002" blue="0.48129916189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pjs-62-XAo">
-                                <rect key="frame" x="323" y="337" width="29" height="39"/>
+                                <rect key="frame" x="323" y="293" width="29" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="yim-38-zSy"/>
                                 </constraints>
@@ -763,7 +764,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jW0-k4-VHE">
-                                <rect key="frame" x="29" y="337" width="29" height="39"/>
+                                <rect key="frame" x="29" y="293" width="29" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="ke8-cg-psD"/>
                                     <constraint firstAttribute="width" constant="29" id="rcK-fY-V9h"/>
