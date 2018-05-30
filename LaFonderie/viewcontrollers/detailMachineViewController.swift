@@ -96,35 +96,7 @@ class detailMachineViewController: UIViewController {
         
     }
     
-    @objc func rotateGesture(recognizer:XMCircleGestureRecognizer)
-    {
-        feedbackLabel.text = ""
-       
-       
-        if let rotation = recognizer.rotation {
-            currentValue += rotation.degrees/360*100
    
-            
-            feedbackLabel.text = feedbackLabel.text! + String(format:"Value: %.2f%%", currentValue)
-            
-        }
-      
-            //recognizer.isEnabled = true
-            if let angle = recognizer.angle {
-                feedbackLabel.text = feedbackLabel.text! + "\n" + String(format:"Angle: %.2f%", angle.degrees)
-
-                
-            }
-        
-        if let distance = recognizer.distance {
-            
-            
-            
-            feedbackLabel.text = feedbackLabel.text! + "\n" + String(format:"Value: %.2f%%", distance)
-                
-            }
-            
-        }
   
 
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -148,20 +120,7 @@ class detailMachineViewController: UIViewController {
             
         }
       
-      /* self.view.addGestureRecognizer(XMCircleGestureRecognizer(midPoint: self.view.center, target: self, action: #selector(ViewController.rotateGesture(recognizer:))))*/
-   
-        
-        //feedbackLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        //view.addSubview(feedbackLabel)
-        //view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[view]-|", options: [], metrics: nil, views: ["view":feedbackLabel]))
-        //view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-[view]-|", options: [], metrics: nil, views: ["view":feedbackLabel]))
-        
-        //feedbackLabel.textAlignment = .center
-        //feedbackLabel.numberOfLines = 0;
-        //feedbackLabel.font = UIFont(name: "HelveticaNeue-Thin", size: 20)
-        //feedbackLabel.text = "Perform a gesture here."
-        
+      
 
     }
 

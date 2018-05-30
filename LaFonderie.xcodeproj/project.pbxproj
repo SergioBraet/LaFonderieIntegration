@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E41471B20BEEA5E00C67C67 /* Instructie3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E41471A20BEEA5E00C67C67 /* Instructie3ViewController.swift */; };
 		0E493A9920BBEB020095F33C /* MetaalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E493A9820BBEB020095F33C /* MetaalViewController.swift */; };
 		0E493A9B20BC22A80095F33C /* MachinesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E493A9A20BC22A80095F33C /* MachinesTableViewController.swift */; };
 		0E6F6FE920BED41100E4228A /* InstructieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6F6FE820BED41100E4228A /* InstructieViewController.swift */; };
@@ -84,6 +85,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E41471A20BEEA5E00C67C67 /* Instructie3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructie3ViewController.swift; sourceTree = "<group>"; };
 		0E493A9820BBEB020095F33C /* MetaalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaalViewController.swift; sourceTree = "<group>"; };
 		0E493A9A20BC22A80095F33C /* MachinesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachinesTableViewController.swift; sourceTree = "<group>"; };
 		0E6F6FE820BED41100E4228A /* InstructieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructieViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 		0E736BB720B4559700C9CC2A = {
 			isa = PBXGroup;
 			children = (
+				0E41471A20BEEA5E00C67C67 /* Instructie3ViewController.swift */,
 				0E736BC220B4559700C9CC2A /* LaFonderie */,
 				0E736BD720B4559700C9CC2A /* LaFonderieTests */,
 				0E736BE220B4559700C9CC2A /* LaFonderieUITests */,
@@ -583,6 +586,7 @@
 				0EDDCABB20B593C300E3860E /* Vectorial.swift in Sources */,
 				0EDDCA3A20B56CC000E3860E /* animations.swift in Sources */,
 				0EDDCAAC20B593C300E3860E /* DynamicItemBasic.swift in Sources */,
+				0E41471B20BEEA5E00C67C67 /* Instructie3ViewController.swift in Sources */,
 				0EDDCA9E20B593C300E3860E /* AnimationSequence.swift in Sources */,
 				0E7EF05520B81258009D5689 /* MainViewController.swift in Sources */,
 				0EDDCAA920B593C300E3860E /* DriveAnimateBehaviors.swift in Sources */,
