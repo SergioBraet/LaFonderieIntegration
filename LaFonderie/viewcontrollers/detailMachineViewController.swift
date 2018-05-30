@@ -35,11 +35,13 @@ class detailMachineViewController: UIViewController {
         
     }
     
-    @IBOutlet weak var randTekst: UIView!
+  
     @IBOutlet var imgMachine: UIImageView!
     var feedbackLabel = UILabel(frame: CGRect.zero)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+     
         let navigationBarAppearance = UINavigationBar.appearance()
         navigationBarAppearance.barTintColor = UIColor(red:0.96, green:0.96, blue:0.91, alpha:1.0)
         haalGegevensOp(naamAfbeelding: "FINAL-5.png")
@@ -52,6 +54,7 @@ class detailMachineViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
     }
     
@@ -133,12 +136,16 @@ class detailMachineViewController: UIViewController {
             print(countTouches)
         }else{
             print(countTouches)
-               handel.rotate(-1).animate()
-            let PopupVC = UIStoryboard(name:"Main", bundle: nil).instantiateViewController(withIdentifier: "PopupView") as! PopUpViewController
-            self.addChildViewController(PopupVC)
-            PopupVC.view.frame = self.view.frame
-            self.view.addSubview(PopupVC.view)
-            PopupVC.didMove(toParentViewController: self)
+            self.handel.rotate(-1).animate()
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
+                let PopupVC = UIStoryboard(name:"Main", bundle: nil).instantiateViewController(withIdentifier: "PopupView") as! PopUpViewController
+                self.addChildViewController(PopupVC)
+                PopupVC.view.frame = self.view.frame
+                self.view.addSubview(PopupVC.view)
+                PopupVC.didMove(toParentViewController: self)
+                })
+            
+            
         }
       
       /* self.view.addGestureRecognizer(XMCircleGestureRecognizer(midPoint: self.view.center, target: self, action: #selector(ViewController.rotateGesture(recognizer:))))*/

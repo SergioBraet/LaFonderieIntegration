@@ -1,5 +1,5 @@
 //
-//  InstructieViewController.swift
+//  Instructie2ViewController.swift
 //  LaFonderie
 //
 //  Created by BRAET Sergio (s) on 30/05/2018.
@@ -8,16 +8,14 @@
 
 import UIKit
 
-class InstructieViewController: UIViewController {
+class Instructie2ViewController: UIViewController {
 
-
-    @IBAction func btnSluiten(_ sender: Any) {
-          self.view.removeFromSuperview()
-    }
+    @IBOutlet var groteWiel: UIImageView!
+    @IBOutlet var kleineWiel: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-self.view.backgroundColor = UIColor(red:0, green:0, blue:0, alpha:0.6)
+        kleineWiel.isHidden = true
+        groteWiel.isHidden = true 
         // Do any additional setup after loading the view.
     }
 

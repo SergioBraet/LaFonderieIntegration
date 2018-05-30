@@ -10,6 +10,7 @@
 		0E493A9920BBEB020095F33C /* MetaalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E493A9820BBEB020095F33C /* MetaalViewController.swift */; };
 		0E493A9B20BC22A80095F33C /* MachinesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E493A9A20BC22A80095F33C /* MachinesTableViewController.swift */; };
 		0E6F6FE920BED41100E4228A /* InstructieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6F6FE820BED41100E4228A /* InstructieViewController.swift */; };
+		0E6F6FEB20BEE3E500E4228A /* Instructie2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6F6FEA20BEE3E500E4228A /* Instructie2ViewController.swift */; };
 		0E736BC420B4559700C9CC2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E736BC320B4559700C9CC2A /* AppDelegate.swift */; };
 		0E736BC620B4559700C9CC2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E736BC520B4559700C9CC2A /* ViewController.swift */; };
 		0E736BC920B4559700C9CC2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E736BC720B4559700C9CC2A /* Main.storyboard */; };
@@ -86,6 +87,7 @@
 		0E493A9820BBEB020095F33C /* MetaalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaalViewController.swift; sourceTree = "<group>"; };
 		0E493A9A20BC22A80095F33C /* MachinesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachinesTableViewController.swift; sourceTree = "<group>"; };
 		0E6F6FE820BED41100E4228A /* InstructieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructieViewController.swift; sourceTree = "<group>"; };
+		0E6F6FEA20BEE3E500E4228A /* Instructie2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructie2ViewController.swift; sourceTree = "<group>"; };
 		0E736BC020B4559700C9CC2A /* LaFonderie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaFonderie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E736BC320B4559700C9CC2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E736BC520B4559700C9CC2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 				0E736BC520B4559700C9CC2A /* ViewController.swift */,
 				0E7EF05C20B833A1009D5689 /* TextielViewController.swift */,
 				0E998DB220BECB5E006AD86E /* PopUpViewController.swift */,
+				0E6F6FEA20BEE3E500E4228A /* Instructie2ViewController.swift */,
 				0E6F6FE820BED41100E4228A /* InstructieViewController.swift */,
 			);
 			path = viewcontrollers;
@@ -612,6 +615,7 @@
 				0EDDCAAE20B593C300E3860E /* GravityConfigurable.swift in Sources */,
 				0E493A9B20BC22A80095F33C /* MachinesTableViewController.swift in Sources */,
 				0EDDCAAD20B593C300E3860E /* DynamicItemGravity.swift in Sources */,
+				0E6F6FEB20BEE3E500E4228A /* Instructie2ViewController.swift in Sources */,
 				0E6F6FE920BED41100E4228A /* InstructieViewController.swift in Sources */,
 				0EDDCAB720B593C300E3860E /* UIView+AnimateBehavior.swift in Sources */,
 				0EDDCAAF20B593C300E3860E /* Interpolatable.swift in Sources */,
