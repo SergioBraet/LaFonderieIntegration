@@ -14,6 +14,8 @@ import Firebase
 class MachineCell:UITableViewCell  {
     @IBOutlet var afbeelding: UIImageView!
     @IBOutlet var beschrijving: UIView!
+    @IBOutlet var txtTitel: UILabel!
+    @IBOutlet var txtBeschrijving: UILabel!
 }
 
 class MachinesTableViewController: UITableViewController {
@@ -22,31 +24,20 @@ class MachinesTableViewController: UITableViewController {
     var databasehandle:DatabaseHandle?
     var sector:String = ""
     var aantalRows:Int = 0
+    var namenArray:[String] = []
+    
     
     @IBOutlet var mijnTableview: UITableView!
     @IBOutlet weak var header: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        haalTekstOp()
         haalAantalMachinesOp()
         
        let navigationBarAppearance = UINavigationBar.appearance()
         navigationBarAppearance.barTintColor = UIColor(red:0.96, green:0.96, blue:0.91, alpha:1.0)
         
         mijnTableview.tableHeaderView = header
-        
 
-        
-       /* beschrijvingView.layer.borderColor =  UIColor(red:0.46, green:0.52, blue:0.53, alpha:1.0).cgColor
-        beschrijvingView.layer.borderWidth = 1
-        beschrijvingView.layer.cornerRadius = 10
-        
-        btnOntdekEersteMachine.layer.cornerRadius = 5*/
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,9 +65,16 @@ class MachinesTableViewController: UITableViewController {
                 self.ref = Database.database().reference()
                 
                 
-                self.databasehandle = self.ref?.child("sectoren").child("TEXTIEL").child("machines").observe(.value, with: { (snapshot)  in
-                    var arraytje = snapshot.value as! [String:AnyObject]
-                    self.aantalRows = arraytje.count
+                self.databasehandle = self.ref?.child("sectoren").child(self.sector).child("machines").observe(.value, with: { (snapshot)  in
+                    var dict = snapshot.value as! [String:AnyObject]
+                    for (key,value) in dict{
+                        /*if key == "naam"{
+                             print("\(key) = \(value)")
+ }*/
+                       self.namenArray.append(key as! String)
+                        
+                    }
+                    self.aantalRows = dict.count
                     self.mijnTableview.reloadData()
                     //return arraytje.count
                     //self.txtBeschrijvingMetaal.text = snapshot.value as! String
@@ -93,7 +91,8 @@ class MachinesTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MachineCell", for: indexPath) as! MachineCell
-        
+        haalTekstOp(naamMachine: namenArray[indexPath.row],cell: cell)
+        haalGegevensOp(naamMachine: namenArray[indexPath.row],cell: cell)
         cell.afbeelding.superview?.bringSubview(toFront: cell.afbeelding)
           cell.beschrijving.layer.borderWidth = 1
            cell.beschrijving.layer.cornerRadius = 10
@@ -103,17 +102,17 @@ class MachinesTableViewController: UITableViewController {
         return cell
     }
     
-    func haalGegevensOp(){
+    func haalGegevensOp(naamMachine:String, cell:MachineCell){
         Auth.auth().signIn(withEmail: "lafonderie2@gmail.com", password: "Lafonderi2") { (user, error) in
             if user != nil{
                 self.ref = Database.database().reference()
                 let storage = Storage.storage().reference()
-                let tempImageRef = storage.child("home 4.png")
+                let tempImageRef = storage.child("\(naamMachine).png")
                 
                 tempImageRef.getData(maxSize: 1*1000*1000){
                     (data, error) in
                     if error == nil{
-                        var afbeelding:UIImage? = UIImage(data: data!)
+                       cell.afbeelding.image = UIImage(data: data!)
                         //self.btnMetaalView.setImage(afbeelding, for: .normal)
                     }else{
                         print(error?.localizedDescription)
@@ -124,18 +123,20 @@ class MachinesTableViewController: UITableViewController {
         
     }
     
-    func haalTekstOp(){
+    func haalTekstOp(naamMachine:String, cell:MachineCell){
         var tekst:String = ""
+        print(naamMachine)
+        print(self.sector)
         Auth.auth().signIn(withEmail: "lafonderie2@gmail.com", password: "Lafonderi2") { (user, error) in
             if user != nil{
                 self.ref = Database.database().reference()
                 
                 
                 
-                self.databasehandle = self.ref?.child("sectoren").child("TEXTIEL").child("machines").observe(.value, with: { (snapshot) in
-                    var arraytje = snapshot.value as! [String:AnyObject]
-                    print(arraytje["naaimachine"]!["beschrijving"])
-                    //self.txtBeschrijvingMetaal.text = snapshot.value as! String
+                self.databasehandle = self.ref?.child("sectoren").child(self.sector).child("machines").child(naamMachine).observe(.value, with: { (snapshot) in
+                    var arr = snapshot.value as! [String:AnyObject]
+                    cell.txtTitel.text = arr["naam"] as! String
+                    cell.txtBeschrijving.text = arr["beschrijving"] as! String
                 })
                 
             }else{
@@ -144,6 +145,9 @@ class MachinesTableViewController: UITableViewController {
         }
         
     }
+    
+    
+
  
 
     /*

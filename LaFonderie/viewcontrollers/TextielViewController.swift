@@ -81,6 +81,15 @@ class TextielViewController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let nav = segue.destination as? UINavigationController{
+            if let destination = nav.viewControllers[0] as? MachinesTableViewController{
+                destination.sector = "TEXTIEL"
+            }
+        }
+        
+    }
+    
 
     /*
     // MARK: - Navigation

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E493A9920BBEB020095F33C /* MetaalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E493A9820BBEB020095F33C /* MetaalViewController.swift */; };
 		0E493A9B20BC22A80095F33C /* MachinesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E493A9A20BC22A80095F33C /* MachinesTableViewController.swift */; };
+		0E6F6FE920BED41100E4228A /* InstructieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6F6FE820BED41100E4228A /* InstructieViewController.swift */; };
 		0E736BC420B4559700C9CC2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E736BC320B4559700C9CC2A /* AppDelegate.swift */; };
 		0E736BC620B4559700C9CC2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E736BC520B4559700C9CC2A /* ViewController.swift */; };
 		0E736BC920B4559700C9CC2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E736BC720B4559700C9CC2A /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		0E8660C520B6B99800A053A8 /* CaviarDreams_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E8660C420B6B99800A053A8 /* CaviarDreams_Bold.ttf */; };
 		0E8660C720B6BBED00A053A8 /* KohinoorBangla.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 0E8660C620B6BBED00A053A8 /* KohinoorBangla.ttc */; };
 		0E8660C920B6F3F600A053A8 /* detailMachineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8660C820B6F3F600A053A8 /* detailMachineViewController.swift */; };
+		0E998DB320BECB5E006AD86E /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E998DB220BECB5E006AD86E /* PopUpViewController.swift */; };
 		0EDDCA3A20B56CC000E3860E /* animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDCA3920B56CC000E3860E /* animations.swift */; };
 		0EDDCA9D20B593C300E3860E /* AnimationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDCA7E20B593C300E3860E /* AnimationContext.swift */; };
 		0EDDCA9E20B593C300E3860E /* AnimationSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDCA7F20B593C300E3860E /* AnimationSequence.swift */; };
@@ -83,6 +85,7 @@
 /* Begin PBXFileReference section */
 		0E493A9820BBEB020095F33C /* MetaalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaalViewController.swift; sourceTree = "<group>"; };
 		0E493A9A20BC22A80095F33C /* MachinesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachinesTableViewController.swift; sourceTree = "<group>"; };
+		0E6F6FE820BED41100E4228A /* InstructieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructieViewController.swift; sourceTree = "<group>"; };
 		0E736BC020B4559700C9CC2A /* LaFonderie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaFonderie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E736BC320B4559700C9CC2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E736BC520B4559700C9CC2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +109,7 @@
 		0E8660C420B6B99800A053A8 /* CaviarDreams_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_Bold.ttf; sourceTree = "<group>"; };
 		0E8660C620B6BBED00A053A8 /* KohinoorBangla.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = KohinoorBangla.ttc; sourceTree = "<group>"; };
 		0E8660C820B6F3F600A053A8 /* detailMachineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailMachineViewController.swift; sourceTree = "<group>"; };
+		0E998DB220BECB5E006AD86E /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		0EDDCA3920B56CC000E3860E /* animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animations.swift; sourceTree = "<group>"; };
 		0EDDCA7E20B593C300E3860E /* AnimationContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationContext.swift; sourceTree = "<group>"; };
 		0EDDCA7F20B593C300E3860E /* AnimationSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationSequence.swift; sourceTree = "<group>"; };
@@ -271,6 +275,8 @@
 				0E7EF05420B81258009D5689 /* MainViewController.swift */,
 				0E736BC520B4559700C9CC2A /* ViewController.swift */,
 				0E7EF05C20B833A1009D5689 /* TextielViewController.swift */,
+				0E998DB220BECB5E006AD86E /* PopUpViewController.swift */,
+				0E6F6FE820BED41100E4228A /* InstructieViewController.swift */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
@@ -591,6 +597,7 @@
 				0EDDCAA820B593C300E3860E /* Chainable.swift in Sources */,
 				0EDDCAA020B593C300E3860E /* AnimationType.swift in Sources */,
 				0EDDCAB220B593C300E3860E /* StepControllable.swift in Sources */,
+				0E998DB320BECB5E006AD86E /* PopUpViewController.swift in Sources */,
 				0EDDCAB120B593C300E3860E /* SnapConfigurable.swift in Sources */,
 				0EDDCA9D20B593C300E3860E /* AnimationContext.swift in Sources */,
 				0EDDCAB020B593C300E3860E /* Physical.swift in Sources */,
@@ -605,6 +612,7 @@
 				0EDDCAAE20B593C300E3860E /* GravityConfigurable.swift in Sources */,
 				0E493A9B20BC22A80095F33C /* MachinesTableViewController.swift in Sources */,
 				0EDDCAAD20B593C300E3860E /* DynamicItemGravity.swift in Sources */,
+				0E6F6FE920BED41100E4228A /* InstructieViewController.swift in Sources */,
 				0EDDCAB720B593C300E3860E /* UIView+AnimateBehavior.swift in Sources */,
 				0EDDCAAF20B593C300E3860E /* Interpolatable.swift in Sources */,
 				0EDDCAAB20B593C300E3860E /* DynamicItem.swift in Sources */,

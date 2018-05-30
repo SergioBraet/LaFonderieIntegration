@@ -64,15 +64,22 @@ class MetaalViewController: UIViewController {
         Auth.auth().signIn(withEmail: "lafonderie2@gmail.com", password: "Lafonderi2") { (user, error) in
             if user != nil{
                 self.ref = Database.database().reference()
-                
-                
-                
+  
                 self.databasehandle = self.ref?.child("sectoren").child("METAAL").child("beschrijving").observe(.value, with: { (snapshot) in
                     self.txtBeschrijvingMetaal.text = snapshot.value as! String
                 })
                 
             }else{
                 print(error?.localizedDescription)
+            }
+        }
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let nav = segue.destination as? UINavigationController{
+            if let destination = nav.viewControllers[0] as? MachinesTableViewController{
+                destination.sector = "METAAL"
             }
         }
         
