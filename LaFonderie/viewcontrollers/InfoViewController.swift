@@ -1,5 +1,5 @@
 //
-//  PopupVoltooidViewController.swift
+//  InfoViewController.swift
 //  LaFonderie
 //
 //  Created by BRAET Sergio (s) on 31/05/2018.
@@ -7,27 +7,32 @@
 //
 
 import UIKit
+import MapKit
 
-class PopupVoltooidViewController: UIViewController {
-
-    @IBOutlet var PopupView: UIView!
+class InfoViewController: UIViewController, MKMapViewDelegate {
+    var locationManager = CLLocationManager()
+    @IBOutlet var mijnMapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        PopupView.layer.borderWidth = 1
-        PopupView.layer.cornerRadius = 10
-        PopupView.layer.borderColor = UIColor(red:0.25, green:0.35, blue:0.40, alpha:1.0).cgColor
-        self.view.backgroundColor = UIColor(red:0, green:0, blue:0, alpha:0.6)
-        UserDefaults.standard.set(100, forKey: "houtPercentageVoltooid")
+        self.title = ""
+locationManager.requestAlwaysAuthorization()
+        locationManager.startUpdatingLocation()
+        
+        let annotation = MKPointAnnotation()
+        annotation.title = "La Fonderie"
+        annotation.coordinate = CLLocationCoordinate2D(latitude: 50.852502, longitude: 4.335923)
+        self.mijnMapView.addAnnotation(annotation)
+        self.mijnMapView.showAnnotations(self.mijnMapView.annotations, animated: true)
+        
         // Do any additional setup after loading the view.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
 
-    
     /*
     // MARK: - Navigation
 

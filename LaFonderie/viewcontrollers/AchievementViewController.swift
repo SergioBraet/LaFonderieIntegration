@@ -27,7 +27,8 @@ class AchievementViewController: UIViewController {
         progressbarHout.layer.cornerRadius = 10
         progressbarHout.clipsToBounds = true
         progressbarHout.setProgress(Float(PercentageVoltooid), animated: true)
-      txtProgressHout.text = "\(PercentageVoltooid)%"
+        txtProgressHout.text = "\(PercentageVoltooid)%"
+        
         
         progressbarMetaal.transform = progressbarMetaal.transform.scaledBy(x: 1, y: 7)
         progressbarMetaal.layer.cornerRadius = 10

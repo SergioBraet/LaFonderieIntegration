@@ -27,8 +27,6 @@ class detailMachineViewController: UIViewController {
     
     @IBOutlet var btnVolgende: UIButton!
     @IBOutlet var handel: UIImageView!
-    @IBOutlet var Band: UIImageView!
-    @IBOutlet var Band2: UIImageView!
     @IBAction func info(_ sender: Any) {
         let PopupVC = UIStoryboard(name:"Main", bundle: nil).instantiateViewController(withIdentifier: "hintView") as! hintViewController
         self.addChildViewController(PopupVC)
@@ -46,9 +44,7 @@ class detailMachineViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         btnVolgende.isHidden = true
-        Band.superview?.bringSubview(toFront: Band)
-        Band2.superview?.bringSubview(toFront: Band2)
-     
+      
         let navigationBarAppearance = UINavigationBar.appearance()
         navigationBarAppearance.barTintColor = UIColor(red:0.96, green:0.96, blue:0.91, alpha:1.0)
         haalGegevensOp(naamAfbeelding: "FINAL-5.png")

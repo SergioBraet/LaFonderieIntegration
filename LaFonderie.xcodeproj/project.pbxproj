@@ -34,6 +34,8 @@
 		0E9AA50620BFF51700C9DBD2 /* InstructieVierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9AA50520BFF51700C9DBD2 /* InstructieVierViewController.swift */; };
 		0E9AA50820BFF94F00C9DBD2 /* PopupVoltooidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9AA50720BFF94F00C9DBD2 /* PopupVoltooidViewController.swift */; };
 		0E9AA50A20C01E3300C9DBD2 /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9AA50920C01E3300C9DBD2 /* AchievementViewController.swift */; };
+		0E9AA50C20C0322E00C9DBD2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9AA50B20C0322E00C9DBD2 /* MapKit.framework */; };
+		0E9AA50E20C032FF00C9DBD2 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9AA50D20C032FF00C9DBD2 /* InfoViewController.swift */; };
 		0EDDCA3A20B56CC000E3860E /* animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDCA3920B56CC000E3860E /* animations.swift */; };
 		0EDDCA9D20B593C300E3860E /* AnimationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDCA7E20B593C300E3860E /* AnimationContext.swift */; };
 		0EDDCA9E20B593C300E3860E /* AnimationSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDCA7F20B593C300E3860E /* AnimationSequence.swift */; };
@@ -122,6 +124,8 @@
 		0E9AA50520BFF51700C9DBD2 /* InstructieVierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructieVierViewController.swift; sourceTree = "<group>"; };
 		0E9AA50720BFF94F00C9DBD2 /* PopupVoltooidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupVoltooidViewController.swift; sourceTree = "<group>"; };
 		0E9AA50920C01E3300C9DBD2 /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
+		0E9AA50B20C0322E00C9DBD2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0E9AA50D20C032FF00C9DBD2 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		0EDDCA3920B56CC000E3860E /* animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animations.swift; sourceTree = "<group>"; };
 		0EDDCA7E20B593C300E3860E /* AnimationContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationContext.swift; sourceTree = "<group>"; };
 		0EDDCA7F20B593C300E3860E /* AnimationSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationSequence.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E736BF320B45D9000C9CC2A /* FirebaseCore.framework in Frameworks */,
+				0E9AA50C20C0322E00C9DBD2 /* MapKit.framework in Frameworks */,
 				4CCFAFB78CE34B623360F9BB /* Pods_LaFonderie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +300,7 @@
 				0E9AA50520BFF51700C9DBD2 /* InstructieVierViewController.swift */,
 				0E9AA50720BFF94F00C9DBD2 /* PopupVoltooidViewController.swift */,
 				0E9AA50920C01E3300C9DBD2 /* AchievementViewController.swift */,
+				0E9AA50D20C032FF00C9DBD2 /* InfoViewController.swift */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
@@ -362,6 +368,7 @@
 		AA67614AC224B52B383359A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E9AA50B20C0322E00C9DBD2 /* MapKit.framework */,
 				0E736BF420B45D9000C9CC2A /* FirebaseCore.framework */,
 				FAB68C86F9DA0F960A96D998 /* Pods_LaFonderie.framework */,
 				D207C925663669F76980BC57 /* Pods_LaFonderieTests.framework */,
@@ -443,6 +450,11 @@
 					0E736BBF20B4559700C9CC2A = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					0E736BD320B4559700C9CC2A = {
 						CreatedOnToolsVersion = 9.2;
@@ -617,6 +629,7 @@
 				0EDDCAA820B593C300E3860E /* Chainable.swift in Sources */,
 				0EDDCAA020B593C300E3860E /* AnimationType.swift in Sources */,
 				0E9AA50A20C01E3300C9DBD2 /* AchievementViewController.swift in Sources */,
+				0E9AA50E20C032FF00C9DBD2 /* InfoViewController.swift in Sources */,
 				0EDDCAB220B593C300E3860E /* StepControllable.swift in Sources */,
 				0E998DB320BECB5E006AD86E /* PopUpViewController.swift in Sources */,
 				0EDDCAB120B593C300E3860E /* SnapConfigurable.swift in Sources */,
