@@ -11,6 +11,16 @@ import UIKit
 class Instructie3ViewController: UIViewController {
 
 
+    @IBAction func hintButton(_ sender: Any) {
+        let PopupVC = UIStoryboard(name:"Main", bundle: nil).instantiateViewController(withIdentifier: "hintView") as! hintViewController
+        self.addChildViewController(PopupVC)
+        PopupVC.huidigeStap = 3
+        PopupVC.view.frame = self.view.frame
+        self.view.addSubview(PopupVC.view)
+        PopupVC.didMove(toParentViewController: self)
+    }
+    
+    @IBOutlet var zaagblad: UIImageView!
     @IBOutlet var ondersteWiel: UIImageView!
     @IBOutlet var bovensteWiel: UIImageView!
     @IBOutlet var band: UIImageView!
@@ -34,8 +44,21 @@ class Instructie3ViewController: UIViewController {
         super.touchesEnded(touches, with: event)
         if(countTouches < 1){
              band.moveX(-10).moveY(-2).animate()
-            bovensteWiel.rotate(.pi).attachment(0,frequency: 20).animate()
-            ondersteWiel.rotate(.pi).attachment(0,frequency: 20).animate()
+            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(500)) {
+                self.bovensteWiel.rotate(.pi).attachment(0,frequency: 20).animate()
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1000)) {
+                self.ondersteWiel.rotate(.pi).attachment(0,frequency: 20).animate()
+                    self.zaagblad.moveY(5).then().moveY(-5).attachment(0,frequency: 20).animate()
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(2000), execute: {
+                let PopupVC = UIStoryboard(name:"Main", bundle: nil).instantiateViewController(withIdentifier: "PopupViewVoltooid") as! PopupVoltooidViewController
+                self.addChildViewController(PopupVC)
+                PopupVC.view.frame = self.view.frame
+                self.view.addSubview(PopupVC.view)
+                PopupVC.didMove(toParentViewController: self)
+            })
+        
         }
         countTouches += 1
        

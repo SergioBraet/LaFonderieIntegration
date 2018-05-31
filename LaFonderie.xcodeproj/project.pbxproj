@@ -30,6 +30,9 @@
 		0E8660C720B6BBED00A053A8 /* KohinoorBangla.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 0E8660C620B6BBED00A053A8 /* KohinoorBangla.ttc */; };
 		0E8660C920B6F3F600A053A8 /* detailMachineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8660C820B6F3F600A053A8 /* detailMachineViewController.swift */; };
 		0E998DB320BECB5E006AD86E /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E998DB220BECB5E006AD86E /* PopUpViewController.swift */; };
+		0E9AA50420BFF2EC00C9DBD2 /* hintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9AA50320BFF2EC00C9DBD2 /* hintViewController.swift */; };
+		0E9AA50620BFF51700C9DBD2 /* InstructieVierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9AA50520BFF51700C9DBD2 /* InstructieVierViewController.swift */; };
+		0E9AA50820BFF94F00C9DBD2 /* PopupVoltooidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9AA50720BFF94F00C9DBD2 /* PopupVoltooidViewController.swift */; };
 		0EDDCA3A20B56CC000E3860E /* animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDCA3920B56CC000E3860E /* animations.swift */; };
 		0EDDCA9D20B593C300E3860E /* AnimationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDCA7E20B593C300E3860E /* AnimationContext.swift */; };
 		0EDDCA9E20B593C300E3860E /* AnimationSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDCA7F20B593C300E3860E /* AnimationSequence.swift */; };
@@ -114,6 +117,9 @@
 		0E8660C620B6BBED00A053A8 /* KohinoorBangla.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = KohinoorBangla.ttc; sourceTree = "<group>"; };
 		0E8660C820B6F3F600A053A8 /* detailMachineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailMachineViewController.swift; sourceTree = "<group>"; };
 		0E998DB220BECB5E006AD86E /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		0E9AA50320BFF2EC00C9DBD2 /* hintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hintViewController.swift; sourceTree = "<group>"; };
+		0E9AA50520BFF51700C9DBD2 /* InstructieVierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructieVierViewController.swift; sourceTree = "<group>"; };
+		0E9AA50720BFF94F00C9DBD2 /* PopupVoltooidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupVoltooidViewController.swift; sourceTree = "<group>"; };
 		0EDDCA3920B56CC000E3860E /* animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animations.swift; sourceTree = "<group>"; };
 		0EDDCA7E20B593C300E3860E /* AnimationContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationContext.swift; sourceTree = "<group>"; };
 		0EDDCA7F20B593C300E3860E /* AnimationSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationSequence.swift; sourceTree = "<group>"; };
@@ -189,7 +195,6 @@
 		0E736BB720B4559700C9CC2A = {
 			isa = PBXGroup;
 			children = (
-				0E41471A20BEEA5E00C67C67 /* Instructie3ViewController.swift */,
 				0E736BC220B4559700C9CC2A /* LaFonderie */,
 				0E736BD720B4559700C9CC2A /* LaFonderieTests */,
 				0E736BE220B4559700C9CC2A /* LaFonderieUITests */,
@@ -274,6 +279,7 @@
 			children = (
 				0E493A9A20BC22A80095F33C /* MachinesTableViewController.swift */,
 				0E493A9820BBEB020095F33C /* MetaalViewController.swift */,
+				0E41471A20BEEA5E00C67C67 /* Instructie3ViewController.swift */,
 				0E7EF05E20B84D34009D5689 /* VoedingViewController.swift */,
 				0E8660C820B6F3F600A053A8 /* detailMachineViewController.swift */,
 				0E8660C120B6AFFE00A053A8 /* MachinesViewController.swift */,
@@ -283,6 +289,9 @@
 				0E998DB220BECB5E006AD86E /* PopUpViewController.swift */,
 				0E6F6FEA20BEE3E500E4228A /* Instructie2ViewController.swift */,
 				0E6F6FE820BED41100E4228A /* InstructieViewController.swift */,
+				0E9AA50320BFF2EC00C9DBD2 /* hintViewController.swift */,
+				0E9AA50520BFF51700C9DBD2 /* InstructieVierViewController.swift */,
+				0E9AA50720BFF94F00C9DBD2 /* PopupVoltooidViewController.swift */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
@@ -600,6 +609,7 @@
 				0EDDCAA320B593C300E3860E /* BasicChainable.swift in Sources */,
 				0E736BC620B4559700C9CC2A /* ViewController.swift in Sources */,
 				0EDDCAB920B593C300E3860E /* UnitBezier.swift in Sources */,
+				0E9AA50820BFF94F00C9DBD2 /* PopupVoltooidViewController.swift in Sources */,
 				0EDDCAA120B593C300E3860E /* AnimatorCoordinator.swift in Sources */,
 				0EDDCAA820B593C300E3860E /* Chainable.swift in Sources */,
 				0EDDCAA020B593C300E3860E /* AnimationType.swift in Sources */,
@@ -608,6 +618,7 @@
 				0EDDCAB120B593C300E3860E /* SnapConfigurable.swift in Sources */,
 				0EDDCA9D20B593C300E3860E /* AnimationContext.swift in Sources */,
 				0EDDCAB020B593C300E3860E /* Physical.swift in Sources */,
+				0E9AA50620BFF51700C9DBD2 /* InstructieVierViewController.swift in Sources */,
 				0EDDCAA720B593C300E3860E /* CALayer+Stellar.swift in Sources */,
 				0EDDCA9F20B593C300E3860E /* AnimationStep.swift in Sources */,
 				0EDDCAB620B593C300E3860E /* UIDynamicBehavior+Commit.swift in Sources */,
@@ -618,6 +629,7 @@
 				0E736BC420B4559700C9CC2A /* AppDelegate.swift in Sources */,
 				0EDDCAAE20B593C300E3860E /* GravityConfigurable.swift in Sources */,
 				0E493A9B20BC22A80095F33C /* MachinesTableViewController.swift in Sources */,
+				0E9AA50420BFF2EC00C9DBD2 /* hintViewController.swift in Sources */,
 				0EDDCAAD20B593C300E3860E /* DynamicItemGravity.swift in Sources */,
 				0E6F6FEB20BEE3E500E4228A /* Instructie2ViewController.swift in Sources */,
 				0E6F6FE920BED41100E4228A /* InstructieViewController.swift in Sources */,
@@ -793,6 +805,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XNHZ79W5DR;
 				INFOPLIST_FILE = LaFonderie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ehb.LaFonderie;
@@ -808,6 +821,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XNHZ79W5DR;
 				INFOPLIST_FILE = LaFonderie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ehb.LaFonderie;

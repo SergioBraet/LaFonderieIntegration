@@ -1,25 +1,22 @@
 //
-//  InstructieViewController.swift
+//  InstructieVierViewController.swift
 //  LaFonderie
 //
-//  Created by BRAET Sergio (s) on 30/05/2018.
+//  Created by BRAET Sergio (s) on 31/05/2018.
 //  Copyright © 2018 BRAET Sergio (s). All rights reserved.
 //
 
 import UIKit
 
-class InstructieViewController: UIViewController {
+class InstructieVierViewController: UIViewController {
 
-    @IBOutlet var popupView: UIView!
-    var HuidigeStap:Int?
-
+    @IBOutlet var Popupview: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        popupView.layer.borderWidth = 1
-        popupView.layer.cornerRadius = 10
-        popupView.layer.borderColor = UIColor(red:0.25, green:0.35, blue:0.40, alpha:1.0).cgColor
-        
-        self.view.backgroundColor = UIColor(red:0, green:0, blue:0, alpha:0.4)
+        self.view.backgroundColor = UIColor(red: 0, green:0, blue:0, alpha:0.6)
+        Popupview.layer.borderWidth = 1
+        Popupview.layer.cornerRadius = 10
+        Popupview.layer.borderColor = UIColor(red:0.25, green:0.35, blue:0.40, alpha:1.0).cgColor
         // Do any additional setup after loading the view.
     }
 

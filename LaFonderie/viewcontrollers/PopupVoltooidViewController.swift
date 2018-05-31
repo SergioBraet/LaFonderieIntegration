@@ -1,25 +1,22 @@
 //
-//  InstructieViewController.swift
+//  PopupVoltooidViewController.swift
 //  LaFonderie
 //
-//  Created by BRAET Sergio (s) on 30/05/2018.
+//  Created by BRAET Sergio (s) on 31/05/2018.
 //  Copyright © 2018 BRAET Sergio (s). All rights reserved.
 //
 
 import UIKit
 
-class InstructieViewController: UIViewController {
+class PopupVoltooidViewController: UIViewController {
 
-    @IBOutlet var popupView: UIView!
-    var HuidigeStap:Int?
-
+    @IBOutlet var PopupView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        popupView.layer.borderWidth = 1
-        popupView.layer.cornerRadius = 10
-        popupView.layer.borderColor = UIColor(red:0.25, green:0.35, blue:0.40, alpha:1.0).cgColor
-        
-        self.view.backgroundColor = UIColor(red:0, green:0, blue:0, alpha:0.4)
+        PopupView.layer.borderWidth = 1
+        PopupView.layer.cornerRadius = 10
+        PopupView.layer.borderColor = UIColor(red:0.25, green:0.35, blue:0.40, alpha:1.0).cgColor
+        self.view.backgroundColor = UIColor(red:0, green:0, blue:0, alpha:0.6)
         // Do any additional setup after loading the view.
     }
 

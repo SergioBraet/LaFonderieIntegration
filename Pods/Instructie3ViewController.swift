@@ -1,25 +1,17 @@
 //
-//  InstructieViewController.swift
-//  LaFonderie
+//  Instructie3ViewController.swift
+//  FirebaseAuth
 //
-//  Created by BRAET Sergio (s) on 30/05/2018.
-//  Copyright © 2018 BRAET Sergio (s). All rights reserved.
+//  Created by BRAET Sergio (s) on 31/05/2018.
 //
 
 import UIKit
 
-class InstructieViewController: UIViewController {
-
-    @IBOutlet var popupView: UIView!
-    var HuidigeStap:Int?
+class Instructie3ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        popupView.layer.borderWidth = 1
-        popupView.layer.cornerRadius = 10
-        popupView.layer.borderColor = UIColor(red:0.25, green:0.35, blue:0.40, alpha:1.0).cgColor
-        
-        self.view.backgroundColor = UIColor(red:0, green:0, blue:0, alpha:0.4)
+
         // Do any additional setup after loading the view.
     }
 

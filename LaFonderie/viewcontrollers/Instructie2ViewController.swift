@@ -10,6 +10,15 @@ import UIKit
 
 class Instructie2ViewController: UIViewController {
 
+    @IBAction func hintButton(_ sender: Any) {
+        let PopupVC = UIStoryboard(name:"Main", bundle: nil).instantiateViewController(withIdentifier: "hintView") as! hintViewController
+        self.addChildViewController(PopupVC)
+        PopupVC.huidigeStap = 2
+        PopupVC.view.frame = self.view.frame
+        self.view.addSubview(PopupVC.view)
+        PopupVC.didMove(toParentViewController: self)
+    }
+    @IBOutlet var btnStapVoltooid: UIButton!
     @IBOutlet var groteWiel: UIImageView!
     @IBOutlet var kleineWiel: UIImageView!
     var currentValue:CGFloat = 0.0{
@@ -25,7 +34,8 @@ class Instructie2ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         kleineWiel.isHidden = true
-        groteWiel.isHidden = true 
+        groteWiel.isHidden = true
+        btnStapVoltooid.isHidden = true
         // Do any additional setup after loading the view.
     }
 
@@ -54,6 +64,7 @@ class Instructie2ViewController: UIViewController {
                     if (currentValue == 100) {
                     self.kleineWiel.rotate(.pi).attachment(0, frequency: 20).animate()
                     self.groteWiel.rotate(.pi).attachment(0, frequency: 20).animate()
+                         btnStapVoltooid.isHidden = false
                     }
                 }
                 

@@ -25,10 +25,14 @@ class detailMachineViewController: UIViewController {
         }
     }
     
+    @IBOutlet var btnVolgende: UIButton!
     @IBOutlet var handel: UIImageView!
+    @IBOutlet var Band: UIImageView!
+    @IBOutlet var Band2: UIImageView!
     @IBAction func info(_ sender: Any) {
-        let PopupVC = UIStoryboard(name:"Main", bundle: nil).instantiateViewController(withIdentifier: "PopUpInstructie") as! InstructieViewController
+        let PopupVC = UIStoryboard(name:"Main", bundle: nil).instantiateViewController(withIdentifier: "hintView") as! hintViewController
         self.addChildViewController(PopupVC)
+        PopupVC.huidigeStap = 1
         PopupVC.view.frame = self.view.frame
         self.view.addSubview(PopupVC.view)
         PopupVC.didMove(toParentViewController: self)
@@ -41,6 +45,9 @@ class detailMachineViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnVolgende.isHidden = true
+        Band.superview?.bringSubview(toFront: Band)
+        Band2.superview?.bringSubview(toFront: Band2)
      
         let navigationBarAppearance = UINavigationBar.appearance()
         navigationBarAppearance.barTintColor = UIColor(red:0.96, green:0.96, blue:0.91, alpha:1.0)
@@ -110,11 +117,7 @@ class detailMachineViewController: UIViewController {
             print(countTouches)
             self.handel.rotate(-1).animate()
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-                let PopupVC = UIStoryboard(name:"Main", bundle: nil).instantiateViewController(withIdentifier: "PopupView") as! PopUpViewController
-                self.addChildViewController(PopupVC)
-                PopupVC.view.frame = self.view.frame
-                self.view.addSubview(PopupVC.view)
-                PopupVC.didMove(toParentViewController: self)
+                self.btnVolgende.isHidden = false
                 })
             
             

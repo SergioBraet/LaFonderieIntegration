@@ -10,11 +10,13 @@ import UIKit
 // bron: https://www.youtube.com/watch?v=FgCIRMz_3dE
 class PopUpViewController: UIViewController {
 
-    @IBAction func close(_ sender: Any) {
-        self.view.removeFromSuperview()
-    }
+    @IBOutlet var Popview: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        Popview.layer.borderWidth = 1
+        Popview.layer.cornerRadius = 10
+        Popview.layer.borderColor = UIColor(red:0.25, green:0.35, blue:0.40, alpha:1.0).cgColor
         self.view.backgroundColor = UIColor(red:0, green:0, blue:0, alpha:0.6)
         // Do any additional setup after loading the view.
     }
