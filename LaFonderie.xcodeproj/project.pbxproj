@@ -33,6 +33,7 @@
 		0E9AA50420BFF2EC00C9DBD2 /* hintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9AA50320BFF2EC00C9DBD2 /* hintViewController.swift */; };
 		0E9AA50620BFF51700C9DBD2 /* InstructieVierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9AA50520BFF51700C9DBD2 /* InstructieVierViewController.swift */; };
 		0E9AA50820BFF94F00C9DBD2 /* PopupVoltooidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9AA50720BFF94F00C9DBD2 /* PopupVoltooidViewController.swift */; };
+		0E9AA50A20C01E3300C9DBD2 /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9AA50920C01E3300C9DBD2 /* AchievementViewController.swift */; };
 		0EDDCA3A20B56CC000E3860E /* animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDCA3920B56CC000E3860E /* animations.swift */; };
 		0EDDCA9D20B593C300E3860E /* AnimationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDCA7E20B593C300E3860E /* AnimationContext.swift */; };
 		0EDDCA9E20B593C300E3860E /* AnimationSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDCA7F20B593C300E3860E /* AnimationSequence.swift */; };
@@ -120,6 +121,7 @@
 		0E9AA50320BFF2EC00C9DBD2 /* hintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hintViewController.swift; sourceTree = "<group>"; };
 		0E9AA50520BFF51700C9DBD2 /* InstructieVierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructieVierViewController.swift; sourceTree = "<group>"; };
 		0E9AA50720BFF94F00C9DBD2 /* PopupVoltooidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupVoltooidViewController.swift; sourceTree = "<group>"; };
+		0E9AA50920C01E3300C9DBD2 /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
 		0EDDCA3920B56CC000E3860E /* animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animations.swift; sourceTree = "<group>"; };
 		0EDDCA7E20B593C300E3860E /* AnimationContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationContext.swift; sourceTree = "<group>"; };
 		0EDDCA7F20B593C300E3860E /* AnimationSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationSequence.swift; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 				0E9AA50320BFF2EC00C9DBD2 /* hintViewController.swift */,
 				0E9AA50520BFF51700C9DBD2 /* InstructieVierViewController.swift */,
 				0E9AA50720BFF94F00C9DBD2 /* PopupVoltooidViewController.swift */,
+				0E9AA50920C01E3300C9DBD2 /* AchievementViewController.swift */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
@@ -613,6 +616,7 @@
 				0EDDCAA120B593C300E3860E /* AnimatorCoordinator.swift in Sources */,
 				0EDDCAA820B593C300E3860E /* Chainable.swift in Sources */,
 				0EDDCAA020B593C300E3860E /* AnimationType.swift in Sources */,
+				0E9AA50A20C01E3300C9DBD2 /* AchievementViewController.swift in Sources */,
 				0EDDCAB220B593C300E3860E /* StepControllable.swift in Sources */,
 				0E998DB320BECB5E006AD86E /* PopUpViewController.swift in Sources */,
 				0EDDCAB120B593C300E3860E /* SnapConfigurable.swift in Sources */,

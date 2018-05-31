@@ -17,8 +17,11 @@ class PopupVoltooidViewController: UIViewController {
         PopupView.layer.cornerRadius = 10
         PopupView.layer.borderColor = UIColor(red:0.25, green:0.35, blue:0.40, alpha:1.0).cgColor
         self.view.backgroundColor = UIColor(red:0, green:0, blue:0, alpha:0.6)
+        UserDefaults.standard.set(100, forKey: "houtPercentageVoltooid")
         // Do any additional setup after loading the view.
     }
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
