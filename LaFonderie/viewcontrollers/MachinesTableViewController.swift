@@ -66,23 +66,20 @@ class MachinesTableViewController: UITableViewController {
                 
                 
                 self.databasehandle = self.ref?.child("sectoren").child(self.sector).child("machines").observe(.value, with: { (snapshot)  in
-                    var dict = snapshot.value as! [String:AnyObject]
+                    let dict = snapshot.value as! [String:AnyObject]
                     for (key,value) in dict{
-                        /*if key == "naam"{
-                             print("\(key) = \(value)")
- }*/
-                       self.namenArray.append(key as! String)
+
+                       self.namenArray.append(key)
                         
                     }
                     self.aantalRows = dict.count
                     self.mijnTableview.reloadData()
-                    //return arraytje.count
-                    //self.txtBeschrijvingMetaal.text = snapshot.value as! String
+
                 })
                
                 
             }else{
-                print(error?.localizedDescription)
+                print(error!.localizedDescription)
             }
         }
     }
@@ -115,7 +112,7 @@ class MachinesTableViewController: UITableViewController {
                        cell.afbeelding.image = UIImage(data: data!)
                         //self.btnMetaalView.setImage(afbeelding, for: .normal)
                     }else{
-                        print(error?.localizedDescription)
+                        print(error!.localizedDescription)
                     }
                 }
             }
@@ -124,7 +121,7 @@ class MachinesTableViewController: UITableViewController {
     }
     
     func haalTekstOp(naamMachine:String, cell:MachineCell){
-        var tekst:String = ""
+
         print(naamMachine)
         print(self.sector)
         Auth.auth().signIn(withEmail: "lafonderie2@gmail.com", password: "Lafonderi2") { (user, error) in
@@ -135,12 +132,12 @@ class MachinesTableViewController: UITableViewController {
                 
                 self.databasehandle = self.ref?.child("sectoren").child(self.sector).child("machines").child(naamMachine).observe(.value, with: { (snapshot) in
                     var arr = snapshot.value as! [String:AnyObject]
-                    cell.txtTitel.text = arr["naam"] as! String
-                    cell.txtBeschrijving.text = arr["beschrijving"] as! String
+                    cell.txtTitel.text = arr["naam"] as? String
+                    cell.txtBeschrijving.text = arr["beschrijving"] as? String
                 })
                 
             }else{
-                print(error?.localizedDescription)
+                print(error!.localizedDescription)
             }
         }
         

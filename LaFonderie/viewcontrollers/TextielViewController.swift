@@ -51,10 +51,10 @@ class TextielViewController: UIViewController {
                 tempImageRef.getData(maxSize: 1*1000*1000){
                     (data, error) in
                     if error == nil{
-                        var afbeelding:UIImage? = UIImage(data: data!)
+                        let afbeelding:UIImage? = UIImage(data: data!)
                         self.btnTextiel.setImage(afbeelding, for: .normal)
                     }else{
-                        print(error?.localizedDescription)
+                        print(error!.localizedDescription)
                     }
                 }
             }
@@ -63,7 +63,7 @@ class TextielViewController: UIViewController {
     }
     
     func haalTekstOp(){
-        var tekst:String = ""
+
         Auth.auth().signIn(withEmail: "lafonderie2@gmail.com", password: "Lafonderi2") { (user, error) in
             if user != nil{
                 self.ref = Database.database().reference()
@@ -71,11 +71,11 @@ class TextielViewController: UIViewController {
                 
                 
                 self.databasehandle = self.ref?.child("sectoren").child("TEXTIEL").child("beschrijving").observe(.value, with: { (snapshot) in
-                    self.txtBeschrijvingTextiel.text = snapshot.value as! String
+                    self.txtBeschrijvingTextiel.text = snapshot.value as? String
                 })
                 
             }else{
-                print(error?.localizedDescription)
+                print(error!.localizedDescription)
             }
         }
         

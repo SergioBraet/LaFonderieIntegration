@@ -71,10 +71,10 @@ class detailMachineViewController: UIViewController {
                 tempImageRef.getData(maxSize: 1*1000*1000){
                     (data, error) in
                     if error == nil{
-                        var afbeelding:UIImage? = UIImage(data: data!)
+                        let afbeelding:UIImage? = UIImage(data: data!)
                         self.imgMachine.image = afbeelding
                     }else{
-                        print(error?.localizedDescription)
+                        print(error!.localizedDescription)
                     }
                 }
             }
@@ -83,7 +83,7 @@ class detailMachineViewController: UIViewController {
     }
     
     func haalTekstOp(){
-        var tekst:String = ""
+
         Auth.auth().signIn(withEmail: "lafonderie2@gmail.com", password: "Lafonderi2") { (user, error) in
             if user != nil{
                 self.ref = Database.database().reference()
@@ -93,7 +93,7 @@ class detailMachineViewController: UIViewController {
                 })
                 
             }else{
-                print(error?.localizedDescription)
+                print(error!.localizedDescription)
             }
         }
         

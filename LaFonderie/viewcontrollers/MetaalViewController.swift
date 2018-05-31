@@ -48,10 +48,10 @@ class MetaalViewController: UIViewController {
                 tempImageRef.getData(maxSize: 1*1000*1000){
                     (data, error) in
                     if error == nil{
-                        var afbeelding:UIImage? = UIImage(data: data!)
+                        let afbeelding:UIImage? = UIImage(data: data!)
                         self.btnMetaalView.setImage(afbeelding, for: .normal)
                     }else{
-                        print(error?.localizedDescription)
+                        print(error!.localizedDescription)
                     }
                 }
             }
@@ -60,17 +60,17 @@ class MetaalViewController: UIViewController {
     }
     
     func haalTekstOp(){
-        var tekst:String = ""
+
         Auth.auth().signIn(withEmail: "lafonderie2@gmail.com", password: "Lafonderi2") { (user, error) in
             if user != nil{
                 self.ref = Database.database().reference()
   
                 self.databasehandle = self.ref?.child("sectoren").child("METAAL").child("beschrijving").observe(.value, with: { (snapshot) in
-                    self.txtBeschrijvingMetaal.text = snapshot.value as! String
+                    self.txtBeschrijvingMetaal.text = snapshot.value as? String
                 })
                 
             }else{
-                print(error?.localizedDescription)
+                print(error!.localizedDescription)
             }
         }
         

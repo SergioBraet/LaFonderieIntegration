@@ -49,10 +49,10 @@ class VoedingViewController: UIViewController {
                 tempImageRef.getData(maxSize: 1*1000*1000){
                     (data, error) in
                     if error == nil{
-                        var afbeelding:UIImage? = UIImage(data: data!)
+                        let afbeelding:UIImage? = UIImage(data: data!)
                         self.btnVoeding.setImage(afbeelding, for: .normal)
                     }else{
-                        print(error?.localizedDescription)
+                        print(error!.localizedDescription)
                     }
                 }
             }
@@ -61,7 +61,7 @@ class VoedingViewController: UIViewController {
     }
     
     func haalTekstOp(){
-        var tekst:String = ""
+
         Auth.auth().signIn(withEmail: "lafonderie2@gmail.com", password: "Lafonderi2") { (user, error) in
             if user != nil{
                 self.ref = Database.database().reference()
@@ -69,11 +69,11 @@ class VoedingViewController: UIViewController {
                 
                 
                 self.databasehandle = self.ref?.child("sectoren").child("VOEDING").child("beschrijving").observe(.value, with: { (snapshot) in
-                    self.txtBeschrijvingVoeding.text = snapshot.value as! String
+                    self.txtBeschrijvingVoeding.text = snapshot.value as? String
                 })
                 
             }else{
-                print(error?.localizedDescription)
+                print(error!.localizedDescription)
             }
         }
 

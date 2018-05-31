@@ -46,13 +46,6 @@ class Instructie2ViewController: UIViewController {
     @objc func rotateGesture(recognizer:XMCircleGestureRecognizer)
     {
         
-     
-        if let angle = recognizer.angle {
-            
-           
-            
-        }
-        
         
         if let distance = recognizer.distance {
             if(distance < 80){
