@@ -15,6 +15,7 @@ class InstructieViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         popupView.layer.borderWidth = 1
         popupView.layer.cornerRadius = 10
         popupView.layer.borderColor = UIColor(red:0.25, green:0.35, blue:0.40, alpha:1.0).cgColor
