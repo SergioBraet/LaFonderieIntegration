@@ -330,7 +330,7 @@
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjl-1k-B6P">
-                                <rect key="frame" x="16" y="8" width="16" height="29"/>
+                                <rect key="frame" x="16" y="44" width="16" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="vkq-R5-4NO"/>
                                 </constraints>
@@ -352,7 +352,7 @@
                             <constraint firstItem="MkC-c1-x0f" firstAttribute="trailing" secondItem="9CW-xu-k0R" secondAttribute="trailing" id="axz-Jw-xde"/>
                             <constraint firstItem="guP-ci-RdG" firstAttribute="width" secondItem="wrK-Mu-5je" secondAttribute="width" id="mZA-yN-K7L"/>
                             <constraint firstItem="9CW-xu-k0R" firstAttribute="bottom" secondItem="MkC-c1-x0f" secondAttribute="bottom" id="pYb-sN-5vV"/>
-                            <constraint firstItem="cjl-1k-B6P" firstAttribute="centerY" secondItem="BdQ-AL-y6z" secondAttribute="centerY" id="zEh-pb-gi3"/>
+                            <constraint firstItem="cjl-1k-B6P" firstAttribute="centerY" secondItem="BdQ-AL-y6z" secondAttribute="centerY" constant="36.5" id="zEh-pb-gi3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MkC-c1-x0f"/>
                     </view>
